@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+.ds_store
+mlruns/
