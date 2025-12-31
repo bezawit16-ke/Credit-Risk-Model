@@ -25,3 +25,28 @@ Model Type | Key Trade-Off | Why it Matters for Bati Bank
 "Simple (e.g., Logistic Regression)" |  High Interpretability for loan justification.  Lower Performance (potentially higher risk exposure).|  Preferred for its transparency and regulatory compliance with Basel II.
 __________________________________________________________________________________________________________________
 "Complex (e.g., Gradient Boosting)"|" Higher Performance (better accuracy/lower default rate). Low Interpretability (""Black Box"")."|"Achieves better results but is difficult to audit and explain, posing a regulatory risk."
+
+
+------------------Final Model Evaluation------------------
+
+## Final Submission: Improved Detection Results
+
+### 1. Model Comparison Table
+| Model | AUC-ROC Score | Recommendation |
+| :--- | :--- | :--- |
+| **Logistic Regression (Baseline)** | [Insert LR Score] | Used for Basel II interpretability. |
+| **Random Forest (Improved)** | [Insert RF Score] | **Champion Model** for highest fraud/risk detection. |
+
+### 2. Key Business Insights
+- **Champion Model:** The Random Forest model is our "Improved" solution because it captures non-linear relationships in customer behavior that simple models miss.
+- **Top Risk Indicator:** Based on Feature Importance, **[Insert Top Feature, e.g., Recency]** is the strongest predictor of credit risk.
+- **Improved Detection:** By transitioning from a simple baseline to a Random Forest, we increased our detection accuracy (AUC) by **[Insert Difference, e.g., 0.15]**.
+
+### 3. Final Folder Structure
+- `/notebooks/eda.ipynb`: Data exploration and Proxy creation.
+- `/notebooks/modeling.ipynb`: Model training, comparison, and evaluation.
+- `customer_rfm_with_proxy.csv`: The final engineered dataset used for modeling.
+
+
+
+
